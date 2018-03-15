@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/name_icon"
+                android:src="@drawable/address"
+
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@+id/name_icon"
+                android:id="@+id/addCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#777777"
+                android:inputType="textPersonName"
+                android:hint="Company Name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/address"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/country_icon"
+                android:layout_marginStart="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Country"
+                android:textColor="#777777"
+                android:textSize="18dp"
+                android:id = "@+id/txt1"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/country_icon"
+                android:layout_toEndOf="@+id/country_icon" />
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/country"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/address"
+
+                android:layout_marginLeft="12dp"
+                android:id="@+id/city_icon"
+                android:layout_marginStart="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" City   "
+                android:textSize="18dp"
+                android:textColor="#777777"
+                android:id = "@+id/txt2"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/city_icon"
+                android:layout_toEndOf="@+id/city_icon" />
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_marginTop="6dp"
+                android:id="@+id/city"
+                android:textColor="#777777"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/category_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/address"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/category11"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:hint="Choose Category"
+                android:textColor="#777777"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/category_icon"
+                android:layout_toEndOf="@+id/category_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+            <ImageView
+                android:id="@+id/sub_category_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/address"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_marginTop="6dp"
+                android:id="@+id/subobject"
+                android:textColor="#777777"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+            <TextView
+                android:id = "@+id/txt4"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/subobject"
+                android:hint="Choose Parent Object"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sub_category_icon"
+                android:layout_toEndOf="@+id/sub_category_icon"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_marginLeft="35dp"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+
+                android:background="#777777" />
+
+            <TextView
+                android:id="@+id/contact_txt"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/view"
+                android:layout_toRightOf="@+id/view"
+
+                android:text="Contact"
+                android:textSize="18dp" />
+            <View
+                android:id="@+id/view3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="70dp"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="#777777" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/address" />
+
+            <Spinner
+                android:id="@+id/contact_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="#777777"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/contact_spinner"
+                android:layout_toRightOf="@+id/email_icon"
+                android:hint="Contact"
+                android:textColor="#777777" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/email_spinner"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_toRightOf="@+id/email_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#777777"
+                android:hint="Contact"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone_num_layout"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/number_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/address" />
+            <Spinner
+
+                android:id="@+id/phone_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="#777777"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/phone_spinner"
+                android:layout_toRightOf="@+id/number_icon"
+                android:hint="Contact"
+                android:textColor="#777777" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:textColor="#777777"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+
+        <Button
+            android:layout_marginTop="25dp"
+
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            style="@android:style/Widget.Button.Inset"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/distanceTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance "
+        android:layout_alignBaseline="@+id/distance"
+        android:layout_alignBottom="@+id/distance"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="81dp"
+        android:text="TextView"
+        android:layout_below="@+id/button"
+        android:layout_toRightOf="@+id/distanceTXT"
+        android:layout_toEndOf="@+id/distanceTXT" />
+    <TextView
+        android:id="@+id/durationTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:layout_below="@+id/distanceTXT"
+        android:layout_alignLeft="@+id/distanceTXT"
+        android:layout_alignStart="@+id/distanceTXT"
+        android:layout_marginTop="41dp" />
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/durationTXT"
+        android:layout_alignBottom="@+id/durationTXT"
+        android:layout_alignLeft="@+id/distance"
+        android:layout_alignStart="@+id/distance" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Get Your Location"
+        android:layout_alignParentTop="true"
+      />
+</RelativeLayout>

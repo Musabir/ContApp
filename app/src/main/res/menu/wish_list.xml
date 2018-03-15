@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_wishlist"
+        android:orderInCategory="2"
+        myapp:showAsAction="always"
+        myapp:actionViewClass="android.widget.WishList"
+        android:icon="@drawable/ic_wishlist"
+        android:title="WishList" />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="1"
+        myapp:showAsAction="always"
+        android:icon="@drawable/ic_share"
+        android:title="Share" />
+</menu>

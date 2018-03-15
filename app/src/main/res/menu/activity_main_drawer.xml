@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/company_list"
+            android:icon="@drawable/list"
+            android:checkable="false"
+            android:title="Company List" />
+
+        <item
+            android:id="@+id/add_the_company"
+            android:icon="@drawable/add"
+            android:checkable="false"
+
+            android:title="Add Place" />
+        <item
+            android:id="@+id/tollfree"
+            android:icon="@drawable/info"
+            android:checkable="false"
+
+            android:title="What is Toll Free?" />
+        <item
+            android:id="@+id/wishlist"
+            android:icon="@drawable/whish"
+            android:checkable="false"
+
+            android:title="Favourite List" />
+        <item
+
+            android:id="@+id/settings"
+            android:icon="@drawable/setting"
+            android:checkable="false"
+
+            android:title="Settings" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/sual"
+            android:checkable="false"
+
+            android:title="About us" />
+
+        <item
+            android:id="@+id/menu_none"
+            android:title=""
+            android:visible="false"/>
+    </group>
+
+</menu>

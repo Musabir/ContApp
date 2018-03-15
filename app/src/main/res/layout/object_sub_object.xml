@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignBottom="@+id/tollfreebutton1"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/path"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/tollfreebutton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/telefon_free"
+            android:layout_marginTop="7dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/object_name"
+            android:layout_marginTop="7dp"
+
+            android:layout_width="269dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity=""
+
+            android:paddingLeft="30dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt23"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/object_name"
+            android:layout_alignStart="@+id/object_name"
+            android:layout_below="@+id/object_name"
+            android:layout_marginBottom="4dp"
+            android:gravity=""
+            android:hint="Address"
+            android:paddingLeft="30dp"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</LinearLayout>
